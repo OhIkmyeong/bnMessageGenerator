@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>커밋 메세지 생성기</title>
+<link rel="stylesheet" type="text/css" href="./style/main.css"/>
+<script src="./js/main.js" type="module"></script>
+</head>
+<body>
+
+<div class="title">
+    <h1>커밋 메세지 생성기 v1.0</h1>
+    <div>메신져로 보낼 간단한 커밋 메세지를 생성합니다.</div>
+</div>
+
+<form id="myForm">
+    <div class="left">
+        <label for="name">
+            <input 
+            id="name" 
+            type="text" 
+            placeholder="업무명을 입력하세요"/>
+            <span class="lbl">업무명</span>
+        </label>
+
+        <div class="checkboxes">
+            <label>
+                <input 
+                name="messageType" 
+                type="radio"
+                checked/>
+                <span class="lblChk">커밋</span>
+            </label>
+            <label>
+                <input 
+                id="recommit"
+                name="messageType" 
+                type="radio"/>
+                <span class="lblChk">재커밋</span>
+            </label>
+        </div>
+    </div>
+    
+    <div class="right">
+        <label class="path">
+            <input
+            class="iptPath"
+            type="text" 
+            placeholder="커밋한 경로를 입력해주세요"
+            />
+            <span class="lbl">경로</span>
+        </label>
+
+        <input type="button" value="경로 추가" id="btn_add_path"/>
+    </div>
+
+    <button id="btn_result">생성</button>
+</form>
+
+<div id="result" contenteditable="true"></div>
+
+</body>
+</html>

@@ -1,0 +1,34 @@
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard-dynamic-subset.css');
+
+:root{
+    --bg:#202023;
+    --font:rgba(255,255,255,.8);
+    --mint:#64ffd0;
+    --purple:rgb(219, 174, 255);
+    --elem-1:rgba(255,255,255,.1);
+    --elem-05:rgba(255,255,255,.05);
+}
+
+*{margin:0;padding:0;box-sizing:border-box;}li{list-style-type:none;}a{text-decoration:none;}
+
+input,button,select,textarea{
+    font-family:inherit;font-size:inherit;color:inherit;}
+
+button{cursor:pointer;}
+
+html,body{
+    display:flex;flex-flow:column nowrap;
+    justify-content:center; align-items:center;
+    width:100%;min-height:100vh;
+    background:var(--bg);
+    font-family: 'Pretendard', '-apple-system', 'BlinkMacSystemFont', system-ui, 'Roboto', 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+    font-size:20px;color:var(--font);}
+
+input[type="text"]{
+    display:block;
+    width:100%;
+    padding:.5em 0;
+    background:transparent;
+    border:none; border-bottom:3px solid var(--elem-1);
+    font-size:1.2em;
+}

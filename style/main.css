@@ -1,0 +1,77 @@
+@charset "utf-8";
+
+@import url('./reset.css');
+
+/* TITLE */
+.title{margin:3rem 0;text-align:center;}
+.title h1{margin-bottom:.5rem;font-size:2.5rem;}
+.title div{opacity:.8;}
+
+/* FORM */
+#myForm{
+    display:flex;flex-flow:row wrap;
+    justify-content:flex-end; align-items:flex-start;
+    width:90%;
+    padding:2rem;
+    background:var(--elem-1);
+    border-radius:14px;
+}
+
+.left,.right{position:relative;}
+.left{width:30%;}
+.right{width: 65%; margin-left:5%;}
+
+label{ 
+    display:block;
+    width:100%;
+    position:relative;
+    padding-top:1.25rem; margin-bottom:1.5rem;}
+
+    /* label:not(:first-of-type){margin-top:1.5rem;} */
+
+
+label .lbl{
+    position:absolute;
+    left:0;top:0;
+    font-size:.875rem;}
+
+/* 체크 박스 영역 */
+.checkboxes{
+    display:flex;
+    justify-content:center;
+    margin-top:-1rem;
+    position:relative;}
+.checkboxes label{margin-right:2rem;}
+
+/* 버튼 - 경로추가 */
+#btn_add_path{
+    display:block;
+    margin:1rem 0 1rem auto; padding:.5em 2em;
+    background:transparent;
+    border:2px solid var(--font);
+    font-size:16px;
+    cursor:pointer;
+}
+#btn_add_path:hover{background:var(--bg);}
+
+/* 버튼 - 생성*/
+#btn_result{
+    padding:.7em 5em; margin-top:1rem;
+    background:var(--mint);
+    border:none; border-radius:3em;
+    font-weight:bold;color:var(--bg);
+}
+
+/* RESULT */
+#result{
+    position:relative;
+    width:100%;
+    margin-top:2rem; padding:3rem;
+    background:var(--elem-05);
+    font-size:1.2rem;text-align:left; 
+}
+#result:empty::after{
+    content:'이곳에 메세지가 표시됩니다.';
+    color:rgba(255,255,255,.2);
+
+}
