@@ -11,7 +11,7 @@
 #myForm{
     display:flex;flex-flow:row wrap;
     justify-content:flex-end; align-items:flex-start;
-    width:90%;
+    width:90%; max-width:1200px;
     padding:2rem;
     background:var(--elem-1);
     border-radius:14px;
