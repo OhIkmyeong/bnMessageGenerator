@@ -43,7 +43,7 @@ async function inspect_paths(){
             if(all_path.length!=1){all_path[i].parentElement.remove();}
         }else{
             all_path[i].value = trimmed;
-            result.push(all_path[i]);
+            result.unshift(all_path[i]);
         }//if
     }//for
     return result;
